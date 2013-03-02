@@ -1,0 +1,17 @@
+<% if user_signed_in? %>
+	hello
+<% else %>
+
+<div class="center hero-unit">
+    <h1>Welcome to Vincent Rails</h1>
+
+    <h2>
+      You've found the home page for the
+      <a href="http://vincentmilliken.com/">Vm app</a>
+      first application.
+    </h2>
+
+    <%= link_to "Sign up now!", new_user_registration_path, class: "btn btn-large btn-primary" %>
+</div>
+
+<% end %>
