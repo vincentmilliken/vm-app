@@ -11,6 +11,10 @@ group :production do
   gem 'pg'
 end
 
+group :production do
+  gem 'thin'
+end
+
 group :development do
   gem 'sqlite3'
 end
