@@ -1,16 +1,16 @@
 <% if user_signed_in? %>
-	hello
+	Welcome <%= current_user.email %>
+
+	<%= link_to "Go To Snippets", pins_path, class: "btn btn-large btn-primary" %>
+
 <% else %>
 
 <div class="center hero-unit">
-    <h1>Welcome to Vincent Rails</h1>
+    <h1>Vincents Rails App</h1>
 
     <h2>
-      You've found the home page for the
-      <a href="http://vincentmilliken.com/">Vm app</a>
-      first application.
+      This a simple Rails app to help me learn a bit more about Rails
     </h2>
-
     <%= link_to "Sign up now!", new_user_registration_path, class: "btn btn-large btn-primary" %>
 </div>
 
