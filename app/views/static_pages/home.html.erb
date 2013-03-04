@@ -1,7 +1,9 @@
 <% if user_signed_in? %>
 	Welcome <%= current_user.email %>
 
-	<%= link_to "Go To Snippets", pins_path, class: "btn btn-large btn-primary" %>
+	<p><%= link_to "Go To Snippets", pins_path, class: "btn btn-large btn-primary" %></p>
+
+	<p><%= link_to "Change your password", edit_user_registration_path, class: "btn btn-primary" %></p>
 
 <% else %>
 
